@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net48</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>EoflaOE</Authors>
+    <Company>EoflaOE</Company>
+    <Description>.NET frontend for Uname on Unix systems</Description>
+    <Copyright>Copyright (c) 2022 EoflaOE and its companies.</Copyright>
+    <PackageProjectUrl>https://github.com/EoflaOE/Uname.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/EoflaOE/Uname.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>uname;kernel;linux;unix;library;information</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RootNamespace>UnameNET</RootNamespace>
+    <LangVersion>10.0</LangVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>OfficialAppIcon-UnameNET-512.png</PackageIcon>
+    <ApplicationIcon>OfficialAppIcon-UnameNET.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="OfficialAppIcon-UnameNET.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="OfficialAppIcon-UnameNET-512.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

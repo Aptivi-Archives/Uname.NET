@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net48</TargetFrameworks>
+    <ApplicationIcon>OfficialAppIcon-UnameNET.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="OfficialAppIcon-UnameNET.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Uname.NET\Uname.NET.csproj" />
+  </ItemGroup>
+
+</Project>
