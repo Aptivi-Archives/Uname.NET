@@ -23,7 +23,7 @@
  * 
  */
 
-#if NETCOREAPP
+#if NET
 using System.Runtime.Versioning;
 #endif
 
@@ -34,7 +34,7 @@ using System.Text;
 
 namespace UnameNET
 {
-#if NETCOREAPP
+#if NET
 	[UnsupportedOSPlatform("windows")]
 #endif
 	public static class UnameManager

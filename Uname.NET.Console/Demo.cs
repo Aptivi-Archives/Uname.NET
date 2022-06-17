@@ -23,13 +23,13 @@
  * 
  */
 
-#if NETCOREAPP
+#if NET
 using System.Runtime.Versioning;
 #endif
 
 namespace UnameNET.Console
 {
-#if NETCOREAPP
+#if NET
     [UnsupportedOSPlatform("windows")]
 #endif
     internal class Demo

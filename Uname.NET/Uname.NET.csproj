@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net48</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net6.0;net48</TargetFrameworks>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>EoflaOE</Authors>
@@ -19,7 +19,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>OfficialAppIcon-UnameNET-512.png</PackageIcon>
     <ApplicationIcon>OfficialAppIcon-UnameNET.ico</ApplicationIcon>
-    <Version>2022.0</Version>
+    <Version>2022.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
