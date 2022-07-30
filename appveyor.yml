@@ -1,0 +1,41 @@
+version: v2022-{build}
+image: Visual Studio 2022
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  package_version: 2022.1.0-build{build}
+  version: ''
+environment:
+  WEBHOOK_URL:
+    secure: p3nnkhnWtqFFH8UJ1eaKFfRjFPlOVhNtmLjd94R7+KTXb2XHYVW3p12mEySUB0kAUgBPjIJZaekw3GO1jRKmQwXVCFogoLqshqWP4bdH3pUsM/iHp7vuK/S/MevE7mq34l7uoOr+GV81x9qw3ezAW2II7PfXnGCtfMkOFk5jcyQ=
+before_build:
+- cmd: nuget restore "%APPVEYOR_BUILD_FOLDER%\Uname.NET.sln"
+build:
+  verbosity: minimal
+after_build:
+- cmd: >-
+    7z a devbuild.zip "%APPVEYOR_BUILD_FOLDER%\Uname.NET\bin\Debug\"
+
+    7z a devbuild-console.zip "%APPVEYOR_BUILD_FOLDER%\Uname.NET.Console\bin\Debug\"
+artifacts:
+- path: devbuild.zip
+  name: Development build of Uname.NET
+- path: devbuild-console.zip
+  name: Development build of Uname.NET - Console Demo
+- path: Uname.NET\bin\Debug\*.nupkg
+deploy:
+- provider: NuGet
+  server: https://www.nuget.org/api/v2/package
+  api_key:
+    secure: 2ocxItByklPOySTf0USeSC6NpQGHHkhYMzj08PlSKNZE/VxLSLzcQpdt4VMTQnJI
+  symbol_server: https://www.nuget.org/api/v2/package
+on_success:
+- ps: >-
+    Invoke-RestMethod https://raw.githubusercontent.com/DiscordHooks/appveyor-discord-webhook/master/send.ps1 -o send.ps1
+
+    ./send.ps1 success $env:WEBHOOK_URL
+on_failure:
+- ps: >-
+    Invoke-RestMethod https://raw.githubusercontent.com/DiscordHooks/appveyor-discord-webhook/master/send.ps1 -o send.ps1
+
+    ./send.ps1 failure $env:WEBHOOK_URL

@@ -4,12 +4,12 @@
     <TargetFrameworks>netcoreapp3.1;net6.0;net48</TargetFrameworks>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>EoflaOE</Authors>
-    <Company>EoflaOE</Company>
+    <Authors>Aptivi</Authors>
+    <Company>Aptivi</Company>
     <Description>.NET frontend for Uname on Unix systems</Description>
-    <Copyright>Copyright (c) 2022 EoflaOE and its companies.</Copyright>
-    <PackageProjectUrl>https://github.com/EoflaOE/Uname.NET</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/EoflaOE/Uname.NET</RepositoryUrl>
+    <Copyright>Copyright (c) 2022 Aptivi.</Copyright>
+    <PackageProjectUrl>https://github.com/Aptivi/Uname.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Aptivi/Uname.NET</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>uname;kernel;linux;unix;library;information</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

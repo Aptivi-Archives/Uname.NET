@@ -7,7 +7,7 @@ Uname.NET is a simple Unix-only library that allows you to get some information 
 ```
 MIT License
 
-Copyright (c) 2022 EoflaOE and its companies
+Copyright (c) 2022 Aptivi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
