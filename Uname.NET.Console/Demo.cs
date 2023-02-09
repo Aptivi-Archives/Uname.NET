@@ -23,15 +23,8 @@
  * 
  */
 
-#if NET
-using System.Runtime.Versioning;
-#endif
-
 namespace UnameNET.Console
 {
-#if NET
-    [UnsupportedOSPlatform("windows")]
-#endif
     internal class Demo
     {
         static void Main()

@@ -23,10 +23,6 @@
  * 
  */
 
-#if NET
-using System.Runtime.Versioning;
-#endif
-
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -34,9 +30,6 @@ using System.Text;
 
 namespace UnameNET
 {
-#if NET
-	[UnsupportedOSPlatform("windows")]
-#endif
 	public static class UnameManager
     {
         /// <summary>

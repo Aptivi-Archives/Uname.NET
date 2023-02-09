@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net6.0;net48</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Aptivi</Authors>
     <Company>Aptivi</Company>
     <Description>.NET frontend for Uname on Unix systems</Description>
-    <Copyright>Copyright (c) 2022 Aptivi.</Copyright>
+    <Copyright>Copyright (c) 2022-2023 Aptivi.</Copyright>
     <PackageProjectUrl>https://github.com/Aptivi/Uname.NET</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Aptivi/Uname.NET</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -18,8 +18,8 @@
     <LangVersion>10.0</LangVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>OfficialAppIcon-UnameNET-512.png</PackageIcon>
-    <Version>2022.0.1</Version>
-    <PackageVersion>2022.0.1.0</PackageVersion>
+    <Version>2022.0.1.1</Version>
+    <PackageVersion>2022.0.1.1</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
