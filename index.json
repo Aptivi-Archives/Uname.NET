@@ -2,7 +2,7 @@
   "api/UnameNET.UnameManager.html": {
     "href": "api/UnameNET.UnameManager.html",
     "title": "Class UnameManager | Uname.NET API - Eofla Internals",
-    "keywords": "Class UnameManager Inheritance object UnameManager Namespace: UnameNET Assembly: Uname.NET.dll Syntax public static class UnameManager Methods | Improve this Doc View Source GetUname(UnameTypes) Gets details from the uname process Declaration public static string GetUname(UnameTypes unameTypes) Parameters Type Name Description UnameTypes unameTypes All the uname types the high-level APIs passed Returns Type Description string Uname string output"
+    "keywords": "Class UnameManager Inheritance object UnameManager Namespace: UnameNET Assembly: Uname.NET.dll Syntax public static class UnameManager Methods | Edit this page View Source GetUname(UnameTypes) Gets details from the uname process Declaration public static string GetUname(UnameTypes unameTypes) Parameters Type Name Description UnameTypes unameTypes All the uname types the high-level APIs passed Returns Type Description string Uname string output"
   },
   "api/UnameNET.UnameTypes.html": {
     "href": "api/UnameNET.UnameTypes.html",
