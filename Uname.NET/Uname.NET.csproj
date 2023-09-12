@@ -20,8 +20,10 @@
     <LangVersion>10.0</LangVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>OfficialAppIcon-UnameNET-512.png</PackageIcon>
-    <Version>2022.0.1.1</Version>
-    <PackageVersion>2022.0.1.1</PackageVersion>
+    <Version>2022.0.1.2</Version>
+    <PackageVersion>2022.0.1.2</PackageVersion>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\aptivi_snk.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
